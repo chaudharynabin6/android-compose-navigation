@@ -21,6 +21,4 @@ data class User(
 
     }
 
-
-
 }

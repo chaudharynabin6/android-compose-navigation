@@ -5,10 +5,7 @@ import androidx.navigation.NamedNavArgument
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavController
 import androidx.navigation.NavDeepLink
-import com.chaudharynabin6.navigationincompose.ui.navigation.destination.HomeScreenDestination
-import com.chaudharynabin6.navigationincompose.ui.navigation.destination.ProfileScreenDestination
-import com.chaudharynabin6.navigationincompose.ui.navigation.destination.SearchScreenDestination
-import com.chaudharynabin6.navigationincompose.ui.navigation.destination.UserScreenDestination
+import com.chaudharynabin6.navigationincompose.ui.navigation.destination.*
 
 //https://proandroiddev.com/compose-destinations-a-simpler-safer-way-to-navigate-in-jetpack-compose-5249ea384298
 //https://www.droidcon.com/2021/11/18/compose-destinations-a-simpler-safer-way-to-navigate-in-jetpack-compose/
@@ -24,7 +21,8 @@ interface ScreenSpec {
             HomeScreenDestination(),
             ProfileScreenDestination(),
             SearchScreenDestination(),
-            UserScreenDestination()
+            UserScreenDestination(),
+            PersonScreenDestination()
         )
     }
 
