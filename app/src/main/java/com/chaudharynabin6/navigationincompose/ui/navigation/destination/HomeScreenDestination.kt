@@ -13,30 +13,19 @@ class HomeScreenDestination : ScreenSpec {
         //        required args
         const val name = "name"
 
-        //        optional args
-        const val isHome = "isHome"
-
         fun withArgs(
             name: String,
             isHome: Boolean = false,
         ): String {
-            return "$base_route/$name?${Companion.isHome}=$isHome"
+            return "$base_route"
         }
     }
 
     override val route: String
-        get() = "$base_route/{$name}?$isHome={$isHome}"
+        get() = "$base_route"
 
     override val arguments: List<NamedNavArgument>
-        get() = listOf(
-            navArgument(name) {
-                type = NavType.StringType
-            },
-            navArgument(isHome) {
-                type = NavType.BoolType
-                defaultValue = false
-            }
-        )
+        get() = listOf()
 
     @Composable
     override fun Content(navController: NavController, navBackStackEntry: NavBackStackEntry) {

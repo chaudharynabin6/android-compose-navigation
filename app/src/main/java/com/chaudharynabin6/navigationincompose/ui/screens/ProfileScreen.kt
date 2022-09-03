@@ -10,6 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 import com.chaudharynabin6.navigationincompose.ui.navigation.Destination
+import com.chaudharynabin6.navigationincompose.ui.navigation.destination.SearchScreenDestination
 
 @Composable
 fun ProfileScreen(
@@ -26,7 +27,7 @@ fun ProfileScreen(
         Button(
             onClick = {
                 navController.navigate(
-                    Destination.SearchScreen().withArgs(
+                    SearchScreenDestination.withArgs(
                         "Navigation"
                     )
                 )
